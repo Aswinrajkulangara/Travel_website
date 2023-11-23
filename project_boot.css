@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* navbar start */
+#navbar{
+    background-color:   #cae4db;
+
+}
+.t-logo{
+    width: 180px;
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color:black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color:#51e2f5  ;
+    font-family: 'Titillium Web', sans-serif;
+}
+.navbar-toggler span{
+    color: #edf7f6;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background:  #0df9a6;
+    color:  white;
+}
+
+.navbar form button{
+    background: #05d9f5 ;
+    color: white;
+    border: none;
+}
+
+
+
+
+/* navbar end */
+
+/* home start */
+.home{
+    width: 100%;
+    height:90vh ;
+    background-image:url(./image/home_pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0 10px 5px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0 3px 3px grey;
+    margin-top: 5px;
+}
+
+.change_content::after{
+    content: ' ';
+    color: #0df9a6;
+    text-shadow: 0 1px 1px black;
+    animation: change_text 10s infinite linear;
+
+}
+@keyframes change_text {
+    0%{content:"france";}
+    20%{content:"India";}
+    30%{content:"America";}
+    40%{content:"Germany";}
+    50%{content:"Italy";}
+    60%{content:"China";}
+    70%{content:"Mexico";}
+    80%{content:"Pakistan";}
+    90%{content:"Argentina";}
+    100%{content:"Brazil";}
+    
+    
+}
+/* .change_content2{
+    
+}
+
+.change_content2::after{
+    content: ' ';
+    color: #0df9a6;
+    text-shadow: 0 1px 1px black;
+    animation: change_text2 2s infinite linear;
+    font-family: 'Dancing Script', cursive;
+}
+@keyframes change_text2
+{
+    0%{content:"Walk"}
+    50%{content:"See"}
+    100%{content:"Touch"}
+
+} */
+.home .content p{
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-family: 'Dancing Script', cursive;
+
+
+
+}
+.home a{
+    padding: 10px;
+    background: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+
+
+
+}
+.home a:hover{
+    background: #51e2f5;
+    color: white;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+
+    }
+    
+    
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+        
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+
+    }
+    
+}
+
+
+
+/* home end */
+
+/* booking start */
+
+.book{
+    background: #028ffa;
+    padding: 50px;
+}
+.book_text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    color: white;
+
+}
+.book_text h1 span {
+    color: #0df9a6; 
+} 
+ h1 #visit{
+    color:#51e2f5;
+    font-family: 'Titillium Web', sans-serif;
+
+ }
+.book .card{
+    border-radius: 10px;
+    box-shadow: opx 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+
+
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #0df9a6;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 175px;
+    background: #05d9f5;
+    color: black;
+
+}
+@media (max-width:765){
+    .book{
+        padding: 0;
+    }
+    .book_text h1 {
+        padding: 20px;
+    }
+}
+
+.title .word{
+    animation: color-animation 4s linear infinite;
+}
+.word1{
+    --color-1:#0df9a6;
+    --color-2:white;
+    --color-3:white;
+    --color-4:white;
+    
+}
+
+.word2{
+    
+    --color-1:white;
+    --color-2:#0df9a6;
+    --color-3:white;
+    --color-4:white;
+    
+}
+
+.word3{
+    
+    --color-1:white;
+    --color-2:white;
+    --color-3:#0df9a6;
+    --color-4:white;
+    
+}
+
+.word4
+{
+    
+    --color-1:white;
+    --color-2:white;
+    --color-3:white;
+    --color-4:#0df9a6;
+    
+}
+
+@keyframes color-animation {
+
+    0% {color: var(--color-1);}
+    30%{color: var(--color-2);}
+    60%{color: var(--color-3);}
+    90%{color: var(--color-4);}
+}
+/* card */
+
+#do{
+    color: red;
+    font-family: 'Racing Sans One', cursive;
+
+}
+#with{
+    color: green;
+    /* font-family: 'Rubik Moonrocks', cursive; */
+    font-family: 'Lobster', cursive;
+}
+#exp{
+    color: #028ffa;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+}
+#seven{
+    color: orange;
+    font-family: 'Borel', cursive;
+}
+
+
+
+
+ 
+
+
+/* package start */
+.main_text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600px;
+    color: white;
+    text-shadow: 1px 3px 4px 2px black;
+    font-family: 'Orbitron', sans-serif;
+
+}
+.main_text h1 span{
+    color: black;
+    font-family: 'Borel', cursive;
+}
+.packages .card{
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Racing Sans One', cursive;
+
+
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.packages .card .card-body a{
+   padding: 10px;
+   text-decoration: none;
+   background: #02f895;
+   color: #086875;
+   border-radius: 5px;
+}
+/* package end */
+
+/* SERVICE START */
+
+.services{
+    background: white;
+    margin-top: 50px;
+}
+.services .main-text h1{
+    text-align: center;
+}
+ 
+.services .card{
+    box-shadow: rgba(0,0,0,0.5)0px 4px 12px ;
+    border: none;
+    cursor: pointer;
+    padding-top: 80px;
+}
+.services .card i{
+    font-size: 75px;
+    text-align: center;
+    color: #05d9f5;
+  
+    margin-top: 20px;
+}
+.services .card i:hover{
+    font-size: 85px;
+    color: #0df9a6;
+
+}
+
+.services.card .card-body h3{
+    font-weight: 600;
+    color: white;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* SERVICE END */
+
+
+/* gallery start */
+
+.gallery .container{
+    padding: 3 rem;
+}
+.gallery .container h1{
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+.tumb .img-container img{
+    display: block;
+    width: 100%;
+}
+.overlay{
+    /* position: absolute; */
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    /* opacity: 0; */
+    /* transition: .5s ease;
+     background-color: #05d9f5; */
+
+}
+
+.caption {
+    font-size: 30px;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    text-align: center;
+}
+
+/* 
+
+
+
+
+.tumb:hover{
+    transform: translateY(-4px)
+}
+.img-container:hover .overlay{
+    opacity: 1;
+
+}
+
+.tumb{
+    box-shadow: rgba(2, 177, 231, 0.886)0px 4px 12px ;
+} */
+
+/* gallary end */
+
+
+/* feed start */
+
+.user_feed{
+    
+    text-align: center;
+}
+.user_review{
+    text-align: center;
+    box-shadow: 0 0 10px 0 black;
+    padding-bottom: 50px;
+}
+.user_review p{
+    padding: 50px 10px 10px 10px;
+}
+.user_feed img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -30px;
+}
+.user_review p::before{
+    /* content: '\201d'; */
+    display: block;
+    position: absolute;
+    font-size: 80px;
+    color: #028ffa;
+    left: 15%;
+    top: 2%;
+}
+
+/* feed end */
+
+#footer a{
+    text-decoration: none;
+    color: white;
+
+}
