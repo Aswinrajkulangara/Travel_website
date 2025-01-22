@@ -87,7 +87,7 @@
     content: ' ';
     color: #0df9a6;
     text-shadow: 0 1px 1px black;
-    animation: change_text 10s infinite linear;
+    animation: change_text 20s infinite linear;
 
 }
 @keyframes change_text {
@@ -104,15 +104,13 @@
     
     
 }
-/* .change_content2{
-    
-}
+
 
 .change_content2::after{
     content: ' ';
     color: #0df9a6;
     text-shadow: 0 1px 1px black;
-    animation: change_text2 2s infinite linear;
+    animation: change_text2 5s infinite linear;
     font-family: 'Dancing Script', cursive;
 }
 @keyframes change_text2
@@ -121,7 +119,7 @@
     50%{content:"See"}
     100%{content:"Touch"}
 
-} */
+}
 .home .content p{
     color: white;
     font-size: 19px;
@@ -369,7 +367,17 @@
    background: #02f895;
    color: #086875;
    border-radius: 5px;
+   transition: 0.5s;
 }
+
+.packages .card .card-body a:hover{
+   
+    background: #ed9f03;
+    color: #eef0f1;
+   
+ }
+
+
 /* package end */
 
 /* SERVICE START */
@@ -446,6 +454,21 @@
     left: 50%;
     /* transform: translate(-50%,-50%); */
     text-align: center;
+}
+
+.img-container
+{
+    transition: width 1s 0s ease-in-out,height 1s 0s linear;
+    box-shadow: rgba(2, 177, 231, 0.886)0px 4px 12px ;
+
+}
+.img-container:hover{
+    width:410px;
+
+    height:400px
+    
+    
+
 }
 
 /* 
